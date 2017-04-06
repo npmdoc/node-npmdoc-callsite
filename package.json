@@ -1,17 +1,40 @@
 {
-    "buildNpmdoc":"callsite",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "callsite",
+    "description": "api documentation for callsite (v1.0.0) [![npm package](https://img.shields.io/npm/v/npmdoc-callsite.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-callsite) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-callsite.svg)](https://travis-ci.org/npmdoc/node-npmdoc-callsite)",
     "devDependencies": {
         "callsite": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "utility2": "kaizhu256/node-utility2#alpha"
     },
-    "name":"npmdoc-callsite",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-callsite",
+    "keywords": [
+        "documentation",
+        "callsite"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_callsite.js",
+    "name": "npmdoc-callsite",
+    "nameAlias": "npmdoc_callsite",
+    "nameOriginal": "npmdoc-callsite",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-callsite"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }
