@@ -54,12 +54,42 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.callsite">module callsite</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.callsite.callsite">
+            function <span class="apidocSignatureSpan"></span>callsite
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.callsite" id="apidoc.module.callsite">module callsite</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.callsite.callsite" id="apidoc.element.callsite.callsite">
+        function <span class="apidocSignatureSpan"></span>callsite
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">callsite = function (){
+  var orig = Error.prepareStackTrace;
+  Error.prepareStackTrace = function(_, stack){ return stack; };
+  var err = new Error;
+  Error.captureStackTrace(err, arguments.callee);
+  var stack = err.stack;
+  Error.prepareStackTrace = orig;
+  return stack;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
