@@ -1,9 +1,14 @@
-# api documentation for  callsite (v1.0.0)  [![npm package](https://img.shields.io/npm/v/npmdoc-callsite.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-callsite) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-callsite.svg)](https://travis-ci.org/npmdoc/node-npmdoc-callsite)
+# npmdoc-callsite
+
+#### api documentation for  callsite (v1.0.0)  [![npm package](https://img.shields.io/npm/v/npmdoc-callsite.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-callsite) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-callsite.svg)](https://travis-ci.org/npmdoc/node-npmdoc-callsite)
+
 #### access to v8's CallSites
 
-[![NPM](https://nodei.co/npm/callsite.png?downloads=true)](https://www.npmjs.com/package/callsite)
+[![NPM](https://nodei.co/npm/callsite.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/callsite)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-callsite/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-callsite_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-callsite/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-callsite/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-callsite/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-callsite/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-callsite/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-callsite/build/screenCapture.npmPackageListing.svg)
 
@@ -17,8 +22,7 @@
 
 {
     "author": {
-        "name": "TJ Holowaychuk",
-        "email": "tj@vision-media.ca"
+        "name": "TJ Holowaychuk"
     },
     "dependencies": {},
     "description": "access to v8's CallSites",
@@ -42,26 +46,14 @@
     "main": "index",
     "maintainers": [
         {
-            "name": "tjholowaychuk",
-            "email": "tj@vision-media.ca"
+            "name": "tjholowaychuk"
         }
     ],
     "name": "callsite",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "version": "1.0.0"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module callsite](#apidoc.module.callsite)
-
-
-
-# <a name="apidoc.module.callsite"></a>[module callsite](#apidoc.module.callsite)
 
 
 
